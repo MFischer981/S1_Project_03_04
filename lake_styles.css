@@ -1,0 +1,155 @@
+﻿@charset "utf-8";
+@import "lake_layout.css";
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: 
+   Date:   
+   
+   Filename: lake_styles.css
+
+*/
+/* Nav */
+html {
+    background-image: url("https://www.publicdomainpictures.net/pictures/230000/velka/wood-texture-1499188076tZ6.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: rgb(100, 87, 78);
+    padding: 0 20px;
+    box-shadow: 0 0 20px black;
+    background-color: url("https://www.nationalparks.org/sites/default/files/styles/wide_2x/public/20160525%20-%20shutterstock_375766855.jpg?itok=zzVuGZrY&timestamp=1470668306")
+}
+
+section#leftcol>img {
+    position: relative;
+    margin: 60px 0 10px 0;
+}
+
+section#leftcol>h1:first-of-type {
+    position: relative;
+    top: 260px;
+    margin: 0 220px;
+    text-align: center;
+    background-color: rgba(100, 87, 78, 0.5);
+    transition: .2s;
+    z-index: 1;
+}
+
+section#leftcol>h1:first-of-type:hover {
+    position: relative;
+    top: 260px;
+    margin: 0 220px;
+    text-align: center;
+    background-color: rgba(100, 87, 78, 0.8);
+    transform: scale(1.05);
+    filter: drop-shadow(0 5px 5px black);
+}
+
+header {
+    position: fixed;
+    width: 47.65%;
+    z-index: 2;
+    filter: drop-shadow(0 5px 5px black);
+}
+
+nav {
+    background-color: rgb(107, 90, 76);
+    padding: 5px;
+    border: 2px rgb(36, 36, 36) solid;
+    color: white;
+}
+
+nav h2 {
+    font-family: "Abril Fatface", serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    transition: .1s;
+    padding: 0 5px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(36, 36, 36);
+    filter: drop-shadow(0 2px 5px black);
+}
+
+aside a {
+    color: white;
+}
+
+aside a:hover {
+    color: white;
+    filter: drop-shadow(0 2px 5px black);
+}
+
+h1 {
+    background-color: rgb(107, 90, 76);
+    border: 2px rgb(36, 36, 36) solid;
+    font-family: "Abril Fatface", serif;
+    color: white;
+    padding: 1vw;
+}
+
+h2 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    background-color: rgb(139, 130, 119);
+}
+
+p {
+    color: white;
+    font-family: "Poppins",
+        sans-serif;
+}
+
+img {
+    border: 2px rgb(36, 36, 36) solid;
+}
+
+ul {
+    color: white;
+    font-family: "Poppins",
+        sans-serif;
+}
+
+blockquote {
+    color: white;
+    font-family: "Poppins",
+        sans-serif;
+    border-left: white 4px dotted;
+    padding: 10px;
+    margin: 12px 6px;
+}
+
+span {
+    color: white;
+    font-family: "Poppins",
+        sans-serif;
+    font-size: 4em;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-family: "Poppins",
+        sans-serif;
+    text-transform: uppercase;
+}
