@@ -15,7 +15,7 @@
    Filename: lake_styles.css
 
 */
-/* Nav */
+/* Main Layout and formatting */
 html {
     background-image: url("https://www.publicdomainpictures.net/pictures/230000/velka/wood-texture-1499188076tZ6.jpg");
     background-repeat: repeat;
@@ -33,7 +33,14 @@ section#leftcol>img {
     margin: 60px 0 10px 0;
 }
 
-section#leftcol>h1:first-of-type {
+
+/* Links and Header formatting and design. Relative position to make space for navbar above page. Z-index to make sure that
+image overlay text stayed above image. Effects and scale applied on hover event. */
+a {
+    text-decoration: none;
+}
+
+section#leftcol>a>h1:first-of-type {
     position: relative;
     top: 260px;
     margin: 0 220px;
@@ -43,7 +50,7 @@ section#leftcol>h1:first-of-type {
     z-index: 1;
 }
 
-section#leftcol>h1:first-of-type:hover {
+section#leftcol>a>h1:first-of-type:hover {
     position: relative;
     top: 260px;
     margin: 0 220px;
@@ -53,9 +60,11 @@ section#leftcol>h1:first-of-type:hover {
     filter: drop-shadow(0 5px 5px black);
 }
 
+
+/* Header fixed to follow page, z-index to stay above other page elements. */
 header {
     position: fixed;
-    width: 47.65%;
+    width: 686px;
     z-index: 2;
     filter: drop-shadow(0 5px 5px black);
 }
@@ -67,6 +76,8 @@ nav {
     color: white;
 }
 
+
+/* Sidenav hover events and formatting/layout. */
 nav h2 {
     font-family: "Abril Fatface", serif;
 }
@@ -96,6 +107,7 @@ aside a:hover {
     filter: drop-shadow(0 2px 5px black);
 }
 
+/* Additional page layour and styling of colors and fonts. */
 h1 {
     background-color: rgb(107, 90, 76);
     border: 2px rgb(36, 36, 36) solid;
@@ -119,6 +131,8 @@ p {
         sans-serif;
 }
 
+
+/* Image border and list styling. Changed list bullet points. */
 img {
     border: 2px rgb(36, 36, 36) solid;
 }
@@ -127,6 +141,26 @@ ul {
     color: white;
     font-family: "Poppins",
         sans-serif;
+}
+
+li {
+    list-style-type: circle;
+}
+
+
+/* Before and after blockquotes set. */
+blockquote::before {
+    content: open-quote;
+    font-family: "Abril Fatface",
+        serif;
+    font-size: 32px;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-family: "Abril Fatface",
+        serif;
+    font-size: 32px;
 }
 
 blockquote {
@@ -138,17 +172,50 @@ blockquote {
     margin: 12px 6px;
 }
 
-span {
-    color: white;
-    font-family: "Poppins",
-        sans-serif;
-    font-size: 4em;
-}
-
+/* Footer format, color, and design. */
 footer {
     text-align: center;
     color: white;
     font-family: "Poppins",
         sans-serif;
     text-transform: uppercase;
+}
+
+
+/* Basic page scaling based on screen width. Elements scale with page and reformat or disappear to fit page.*/
+@media only screen and (max-width: 1020px) {
+    header {
+        position: fixed;
+        width: 67.2vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section#leftcol>a>h1:first-of-type {
+        position: relative;
+        top: 260px;
+        margin: 0 220px;
+        text-align: center;
+        background-color: rgba(100, 87, 78, 0.5);
+        transition: .2s;
+        z-index: 1;
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    section#leftcol>img {
+        position: relative;
+        margin: 0 0 10px 0;
+    }
+
+    body>section#rightcol {
+        display: none;
+    }
+
+    body>section#leftcol {
+        width: 100%;
+    }
 }
