@@ -15,7 +15,7 @@
    Filename: lake_styles.css
 
 */
-/* Main Layout and formatting */
+/* Main Layout and formatting of page. Background image fixed to page. Image repeats. Body color and shadow. Left column margin set and position.*/
 html {
     background-image: url("https://www.publicdomainpictures.net/pictures/230000/velka/wood-texture-1499188076tZ6.jpg");
     background-repeat: repeat;
@@ -77,7 +77,7 @@ nav {
 }
 
 
-/* Sidenav hover events and formatting/layout. */
+/* Sidenav hover events and formatting/layout. Links set up to adjust on hover events. */
 nav h2 {
     font-family: "Abril Fatface", serif;
 }
@@ -107,7 +107,7 @@ aside a:hover {
     filter: drop-shadow(0 2px 5px black);
 }
 
-/* Additional page layour and styling of colors and fonts. */
+/* Additional page layout and styling of colors and fonts. Font styles and color styles applied to elements. */
 h1 {
     background-color: rgb(107, 90, 76);
     border: 2px rgb(36, 36, 36) solid;
@@ -148,7 +148,7 @@ li {
 }
 
 
-/* Before and after blockquotes set. */
+/* Before and after blockquotes set. Display elements on page through use of CSS only.*/
 blockquote::before {
     content: open-quote;
     font-family: "Abril Fatface",
@@ -172,7 +172,7 @@ blockquote {
     margin: 12px 6px;
 }
 
-/* Footer format, color, and design. */
+/* Footer format, color, and design. Text transform uppercase.*/
 footer {
     text-align: center;
     color: white;
